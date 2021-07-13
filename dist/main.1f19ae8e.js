@@ -118,7 +118,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-console.log(123);
+var str = "\n010-1234-5678\nthesecon@ganmil.com\nhttps:www.omdbapi.com/?\nThe quick brown fox jumps over the lazy dog.\nabbccccdddd\n";
+console.log(str.match(/(?<=@).{1,}/g));
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
